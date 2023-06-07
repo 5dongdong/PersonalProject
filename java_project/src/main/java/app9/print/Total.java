@@ -14,14 +14,10 @@ public class Total {
         for (int i = 0; i < cnt; i++) {
             if (where[i].equals("식비")) {
                 foodExpense += a[i];
-            } else {
-                if (where[i].equals("옷")) {
-                    clothExpense += a[i];
-                } else {
-                    if (where[i].equals("기타")) {
-                        etcExpense += a[i];
-                    }
-                }
+            } else if (where[i].equals("옷")) {
+                clothExpense += a[i];
+            } else if (where[i].equals("기타")) {
+                etcExpense += a[i];
             }
 
             sum += a[i];

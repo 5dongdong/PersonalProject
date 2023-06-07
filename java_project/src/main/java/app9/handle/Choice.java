@@ -20,19 +20,17 @@ public class Choice {
             System.out.println("----------");
             System.out.println();
             choice();
+        } else if (selection == 2) {
+            System.out.println();
+            System.out.println("----------");
+            System.out.println();
+            total();
         } else {
-            if (selection == 2) {
-                System.out.println();
-                System.out.println("----------");
-                System.out.println();
-                total();
-            } else {
-                System.out.println("잘못된 선택입니다.");
-                System.out.println();
-                System.out.println("----------");
-                System.out.println();
-                Choice();
-            }
+            System.out.println("잘못된 선택입니다.");
+            System.out.println();
+            System.out.println("----------");
+            System.out.println();
+            Choice();
         }
 
     }
